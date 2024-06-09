@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0"
+    />
     <title>AR Body Tracking</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
     <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/body-pix"></script>
-</head>
-<body>
+  </head>
+  <body>
     <a-scene embedded arjs>
-        <a-entity camera></a-entity>
-        <a-entity id="ar-skin" position="0 1.6 -2">
-            <a-box color="#4CC3D9" width="1" height="2" depth="0.5"></a-box>
-        </a-entity>
+      <a-entity camera></a-entity>
+      <a-entity id="ar-skin" position="0 1.6 -2">
+        <a-box color="#4CC3D9" width="1" height="2" depth="0.5"></a-box>
+      </a-entity>
     </a-scene>
-    <video id="video" playsinline style="display:none;"></video>
+    <video id="video" playsinline style="display: none"></video>
     <script src="main.js"></script>
-</body>
+  </body>
 </html>
